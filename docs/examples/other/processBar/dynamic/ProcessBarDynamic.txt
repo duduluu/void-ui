@@ -28,6 +28,7 @@ export default class ProcessBarDynamic extends Vue {
   failure2 = false;
 
   restore() {
+    this.failure2 = false;
     this.percentage1 = 0;
     this.percentage2 = 0;
   }

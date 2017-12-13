@@ -5,14 +5,14 @@ progressBar 进度条 用于展示操作进度
 ### 基本使用
 
 ```html
- <vd-process-bar percentage="50"></vd-process-bar>
+ <vd-process-bar value="50"></vd-process-bar>
 ```
 
 <example-board :component="ProcessBarBasic" :source="ProcessBarBasicSource"></example-board>
 
 ### 动态展示
 
-`percentage`的范围为 0 - 100
+`value`的范围为 0 - 100
 
 <example-board :component="ProcessBarDynamic" :source="ProcessBarDynamicSource"></example-board>
 
@@ -20,11 +20,11 @@ progressBar 进度条 用于展示操作进度
 
 > `*`表示默认值。
 
-| Property   | Description        | Type      | Available Value |
-| :--------- | :----------------- | :-------- | :-------------- |
-| percentage | 进度条百分比       | `number`  | 0               |
-| failure    | 进度是否中断       | `boolean` | **false\***     |
-| ShowText   | 是否显示百分比提示 | `boolean` | **true\***      |
+| Property | Description        | Type      | Available Value    |
+| :------- | :----------------- | :-------- | :----------------- |
+| value    | 进度条百分比       | `number`  | 0 - 100            |
+| failure  | 进度是否中断       | `boolean` | true, **false\***  |
+| ShowText | 是否显示百分比提示 | `boolean` | **true\*** , false |
 
 <script>
 
